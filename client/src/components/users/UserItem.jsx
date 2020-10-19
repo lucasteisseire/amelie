@@ -38,7 +38,7 @@ const UserItem = ({ user }) => {
         <Grid item xs={3} container>
           <img
             src={
-              "https://static1.purebreak.com/articles/2/19/19/32/@/709900-the-boys-saison-2-stormfront-se-devoil-diapo-2.jpeg"
+              "https://media1.tenor.com/images/c1a0370c7da053b98aedf2cd17b67180/tenor.gif?itemid=17834491"
             }
             alt=''
           />
