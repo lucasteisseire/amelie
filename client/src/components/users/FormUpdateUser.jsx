@@ -229,7 +229,7 @@ const FormUpdateUser = ({ user }) => {
                         onClick={(e) => handleClick(e)}
                         value={enumSquad.SQUAD_MEMBER}
                         className={
-                          squadValue === enumSquad.SQUAD_LEADER
+                          squadValue === enumSquad.SQUAD_MEMBER
                             ? "checked"
                             : null
                         }
