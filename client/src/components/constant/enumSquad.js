@@ -1,0 +1,5 @@
+export const enumSquad = {
+  SQUAD_LEADER: "SQUAD_LEADER",
+  SQUAD_MEMBER: "SQUAD_MEMBER",
+  STAGIAIRE: "STAGIAIRE",
+};
