@@ -37,7 +37,9 @@ const UserItem = ({ user }) => {
       <Grid container justify='flex-start'>
         <Grid item xs={3} container>
           <img
-            src={"https://s3.amazonaws.com/37assets/svn/765-default-avatar.png"}
+            src={
+              "https://static1.purebreak.com/articles/2/19/19/32/@/709900-the-boys-saison-2-stormfront-se-devoil-diapo-2.jpeg"
+            }
             alt=''
           />
         </Grid>
