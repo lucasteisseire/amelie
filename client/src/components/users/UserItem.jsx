@@ -38,7 +38,7 @@ const UserItem = ({ user }) => {
         <Grid item xs={3} container>
           <img
             src={
-              "https://media1.tenor.com/images/c1a0370c7da053b98aedf2cd17b67180/tenor.gif?itemid=17834491"
+              "https://images.everyeye.it/img-notizie/the-boys-antony-starr-homelander-po-papa-sette-v4-394166-720x720.jpg"
             }
             alt=''
           />
