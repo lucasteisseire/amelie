@@ -65,11 +65,12 @@ export const userMutation = {
     if (updateUserInput.password) {
       updateUserInput.password = await hashPassword(updateUserInput.password);
     }
+    const currentUser = await User.findById(updateUserInput.userId);
     const { team } = await User.findById(updateUserInput.userId).populate({
       path: "team",
       populate: { path: "users" },
     });
-    if (team) {
+    if (team && currentUser.userRole !== updateUserInput.userRole) {
       validateNewRoleInTeam(team, updateUserInput.userRole);
     }
     const user = await User.findByIdAndUpdate(

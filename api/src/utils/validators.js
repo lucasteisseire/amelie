@@ -62,6 +62,7 @@ export const validateTeam = (team) => {
   return true;
 };
 export const validateRole = (newRole, currentRole) => {
+  if (currentRole === newRole) return true;
   if (currentRole === "STAGIAIRE" && newRole !== "SQUAD_MEMBER") {
     throw new Error("you can only become a member");
   }
@@ -80,7 +81,6 @@ export const validateNewRoleInTeam = (team, newRole) => {
   let SQUAD_LEADER = 0;
   let SQUAD_MEMBER = 0;
   let STAGIAIRE = 0;
-  console.log(team.users);
   if (team.users) {
     for (let i = 0; i < team.users.length; i++) {
       team.users[i].userRole === "SQUAD_LEADER" && (SQUAD_LEADER += 1);
